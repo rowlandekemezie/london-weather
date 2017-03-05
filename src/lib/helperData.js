@@ -2,28 +2,28 @@ import style from '../components/iphone/style';
 
 export const locations = {
   "London": {
-    "url": "http://api.wunderground.com/api/56e8a29514044fcf/forecast/q/Uk/London.json"
+    "url": "https://api.wunderground.com/api/56e8a29514044fcf/forecast/q/Uk/London.json"
   },
   "Buckingham": {
-    "url": "http://api.wunderground.com/api/56e8a29514044fcf/forecast/q/Uk/Buckingham.json"
+    "url": "https://api.wunderground.com/api/56e8a29514044fcf/forecast/q/Uk/Buckingham.json"
   },
   "St. Pauls": {
     "url": "http://api.wunderground.com/api/2cf6aee65910be39/forecast/q/UK/City%20of%20London.json"
     //url for shards, st pauls and tower bridge are not available at the moment
   },
   "Tower Bridge": {
-    "url": "http://api.wunderground.com/api/2cf6aee65910be39/forecast/q/UK/Bermondsey.json"
+    "url": "https://api.wunderground.com/api/2cf6aee65910be39/forecast/q/UK/Bermondsey.json"
     //url for shards, st pauls and tower bridge are not available at the moment
   },
   "Shards": {
-    "url": "http://api.wunderground.com/api/2cf6aee65910be39/forecast/q/UK/Minchinhampton.json"
+    "url": "https://api.wunderground.com/api/2cf6aee65910be39/forecast/q/UK/Minchinhampton.json"
     //url for shards, st pauls and tower bridge are not available at the moment
   },
   "Greenwich": {
-    "url": "http://api.wunderground.com/api/56e8a29514044fcf/forecast/q/Uk/Greenwich.json"
+    "url": "https://api.wunderground.com/api/56e8a29514044fcf/forecast/q/Uk/Greenwich.json"
   },
   "Big Ben": {
-    "url": "http://api.wunderground.com/api/2cf6aee65910be39/forecast/q/UK/Puddle%20Dock.json"
+    "url": "https://api.wunderground.com/api/2cf6aee65910be39/forecast/q/UK/Puddle%20Dock.json"
     //url for shards, st pauls and tower bridge are not available at the moment
   }
 };
