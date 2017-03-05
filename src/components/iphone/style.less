@@ -1,0 +1,330 @@
+@import '~style/helpers';
+
+.container { 
+	display: flex;
+	flex-direction: column;
+	background-image: url('../../assets/backgrounds/clear-iphone.jpg');
+	color: #fff;
+	width: 414px;
+	height: 736px;
+	text-align: center;
+	padding-top: 10px;
+	margin: 0 auto;
+}
+.lower {
+  position: relative;
+  width: 100%;
+  bottom: 0px;
+}
+.details {
+  clear: both;
+  display: flex;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.8);
+}
+.city_weather {
+	display: inline-block;
+	flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 50%;
+  min-width: 50%;
+  padding-top: 10px;
+  border-right: 1px solid #ccc;
+}
+.recommendation {
+  display: inline-block;
+  max-width: 50%;
+  min-width: 50%;
+  vertical-align: top;
+  padding-left: 5px;
+  padding-top: 10px;
+  border-left: 1px solid #ccc;
+}
+
+.forecast {
+  display: block;
+  font-size: 14px;
+  text-align: center;
+  background-color: rgba(150, 150, 150, 0.2);
+  line-height: 1.5;
+}
+
+.forecast_day {
+ display: inline-block;
+}
+
+.forecast_day .day {
+  display: block;
+  font-weight: bold;
+}
+.forecast_day .date {
+  display: block;
+}
+
+.forecast .iconUrl {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 5px;
+}
+
+.main {
+  clear: both;
+  background-color: rgba(150, 150, 150, 0.3);
+  width: 60%;
+  border-radius: 5px;
+  margin: 0px auto;
+}
+.city_weather .city {
+  padding: 5px;
+}
+.forecast .stats {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.forecast .temp {
+  display: block;
+}
+.city {
+	font-size: 40px;
+	font-weight: 400;	
+  padding-top: 10px;
+}
+.conditions {
+	font-size: 1em;
+  font-size: 30px;
+}
+
+.small {
+  font-size: 20px;
+  text-align: center;
+  word-spacing: 100px;
+}
+.temperature {
+	flex: 2;
+	margin-top: 0;
+	font-size: 4.8em;
+	font-weight: 300;
+	letter-spacing: -12px;
+}
+.filled:after {
+	content: "°";
+	margin: 0 0 0 1rem;
+	font-size: 0.5em;
+	font-weight: 100;
+	display: inline-block;
+	padding-top: 10px;
+	vertical-align: top;
+}
+
+.icon {
+  vertical-align: middle;
+}
+
+.toggle {
+  position: absolute;
+  width: 100%;
+  color: #fafafa;
+  bottom: -58px;
+  padding: 20px;
+  background-color: #3c3c50;
+}
+
+
+.temp_toggle {
+  float: left;
+  padding: 10px;
+  margin-top: 170px;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  vertical-align: middle;
+  margin: 0px 5px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #2196F3;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #ccc;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.clothings {
+  padding: 10px;
+}
+
+.buckingham_day {
+	background-image: url('../../assets/backgrounds/tourist_places/buckingham_day.png');
+  background-size: cover;
+}
+.buckingham_day_grey {
+	background-image: url('../../assets/backgrounds/tourist_places/buckingham_day_grey.png');
+  background-size: cover;
+}
+.buckingham_day_rain {
+	background-image: url('../../assets/backgrounds/tourist_places/buckingham_day_rain.png');
+  background-size: cover;
+}
+.buckingham_night {
+	background-image: url('../../assets/backgrounds/tourist_places/buckingham_night.png');
+  background-size: cover;
+}
+.buckingham_night_rain {
+	background-image: url('../../assets/backgrounds/tourist_places/buckingham_night_rain.png');
+  background-size: cover;
+}
+
+.greenwich_day {
+	background-image: url('../../assets/backgrounds/tourist_places/greenwich_day.png');
+  background-size: cover;
+}
+.greenwich_day_grey {
+	background-image: url('../../assets/backgrounds/tourist_places/greenwich_day_grey.png');
+  background-size: cover;
+}
+.greenwich_day_rain {
+	background-image: url('../../assets/backgrounds/tourist_places/greenwich_day_rain.png');
+  background-size: cover;
+}
+.greenwich_night {
+	background-image: url('../../assets/backgrounds/tourist_places/greenwich_night.png');
+  background-size: cover;
+}
+.greenwich_night_rain {
+	background-image: url('../../assets/backgrounds/tourist_places/greenwich_night_rain.png');
+  background-size: cover;
+}
+
+.st_pauls_day {
+	background-image: url('../../assets/backgrounds/tourist_places/st_pauls_day.png');
+  background-size: cover;
+}
+.st_pauls_day_grey {
+	background-image: url('../../assets/backgrounds/tourist_places/st_pauls_day_grey.png');
+  background-size: cover;
+}
+.st_pauls_day_rain {
+	background-image: url('../../assets/backgrounds/tourist_places/st_pauls_day_rain.png');
+  background-size: cover;
+}
+.st_pauls_night {
+	background-image: url('../../assets/backgrounds/tourist_places/st_pauls_night.png');
+  background-size: cover;
+}
+.st_pauls_night_rain {
+	background-image: url('../../assets/backgrounds/tourist_places/st_pauls_night_rain.png');
+  background-size: cover;
+}
+
+.shards_day {
+	background-image: url('../../assets/backgrounds/tourist_places/shards_day.png');
+  background-size: cover;
+}
+.shards_day_grey {
+	background-image: url('../../assets/backgrounds/tourist_places/shards_day_grey.png');
+  background-size: cover;
+}
+.shards_day_rain {
+	background-image: url('../../assets/backgrounds/tourist_places/shards_day_rain.png');
+  background-size: cover;
+}
+.shards_night {
+	background-image: url('../../assets/backgrounds/tourist_places/shards_night.png');
+  background-size: cover;
+}
+.shards_night_rain {
+	background-image: url('../../assets/backgrounds/tourist_places/shards_night_rain.png');
+  background-size: cover;
+}
+
+.tower_bridge_day {
+	background-image: url('../../assets/backgrounds/tourist_places/tower_bridge_day.png');
+  background-size: cover;
+}
+.tower_bridge_day_grey {
+	background-image: url('../../assets/backgrounds/tourist_places/tower_bridge_day_grey.png');
+  background-size: cover;
+}
+.tower_bridge_day_rain {
+	background-image: url('../../assets/backgrounds/tourist_places/tower_bridge_day_rain.png');
+  background-size: cover;
+}
+.tower_bridge_night {
+	background-image: url('../../assets/backgrounds/tourist_places/tower_bridge_night.png');
+  background-size: cover;
+}
+.tower_bridge_night_rain {
+	background-image: url('../../assets/backgrounds/tourist_places/tower_bridge_night_rain.png');
+  background-size: cover;
+}
+
+.bigben_day {
+	background-image: url('../../assets/backgrounds/tourist_places/bigben_day.png');
+  background-size: cover;
+}
+.bigben_day_grey {
+	background-image: url('../../assets/backgrounds/tourist_places/bigben_day_grey.png');
+  background-size: cover;
+}
+.bigben_day_rain {
+	background-image: url('../../assets/backgrounds/tourist_places/bigben_day_rain.png');
+  background-size: cover;
+}
+.bigben_night {
+	background-image: url('../../assets/backgrounds/tourist_places/bigben_night.png');
+  background-size: cover;
+}
+.bigben_night_rain {
+	background-image: url('../../assets/backgrounds/tourist_places/bigben_night_rain.png');
+  background-size: cover;
+}
