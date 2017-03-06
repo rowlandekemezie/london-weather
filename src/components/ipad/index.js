@@ -1,4 +1,4 @@
-// import preact 
+// import preact
 import { h, render, Component } from 'preact';
 // import stylesheets for ipad & button
 import style from './style';
@@ -23,13 +23,13 @@ export default class Ipad extends Component {
   // a call to fetch weather data via wunderground
   fetchWeatherData = () => {
     // API URL with a structure of : ttp://api.wunderground.com/api/key/feature/q/country-code/city.json
-    var url = "http://api.wunderground.com/api/c78f1a13d2ca6971/conditions/q/UK/London.json";
+    const url = "https://api.wunderground.com/api/c78f1a13d2ca6971/conditions/q/UK/London.json";
     $.ajax({
-      url: url,
+      url,
       dataType: "jsonp",
       success: this.parseResponse,
-      error: function (req, err) { console.log('API call failed ' + err); }
-    })
+      error:  (req, err)  => { console.log('API call failed ' + err); }
+    });
     // once the data grabbed, hide the button
     this.setState({ display: false });
   }
@@ -57,10 +57,10 @@ export default class Ipad extends Component {
   }
 
   parseResponse = (parsed_json) => {
-    var city = parsed_json['current_observation']['display_location']['city'];
-    var country = parsed_json['current_observation']['display_location']['country'];
-    var temp_c = parsed_json['current_observation']['temp_c'];
-    var conditions = parsed_json['current_observation']['weather'];
+    const city = parsed_json['current_observation']['display_location']['city'];
+    const country = parsed_json['current_observation']['display_location']['country'];
+    const temp_c = parsed_json['current_observation']['temp_c'];
+    const conditions = parsed_json['current_observation']['weather'];
 
     // set the states for fields so they could be rendered later on
     this.setState({
