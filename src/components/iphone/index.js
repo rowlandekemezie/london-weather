@@ -58,6 +58,7 @@ export default class Iphone extends Component {
     return this.setState({ showDetails: !showDetails });
   }
 
+	// Set background color based on weather condition
   setBackground = (ind = 0) => {
     const grey = ['Cloudy', 'Cloud', 'Fog', 'Mist', 'Haze', 'Overcast'];
     const rain = ['Rainy', 'Rain', 'Drizzle', 'Hail', 'Showers'];
@@ -171,6 +172,7 @@ export default class Iphone extends Component {
     );
   }
 
+  // Parse the response data
   parseResponse = (parsed_json, location) => {
     // log error if call returns error
     if (parsed_json.response.error) {
@@ -178,8 +180,7 @@ export default class Iphone extends Component {
         parsed_json.response.error.description);
     }
 
-    const weatherInfo =
-      WeatherFormat(parsed_json.forecast.simpleforecast.forecastday, location);
+    const weatherInfo = WeatherFormat(parsed_json.forecast.simpleforecast.forecastday, location);
 
     // set states for fields so they could be rendered later on
     if (location === 'London') {
