@@ -1,5 +1,7 @@
 [![Contact me on Codementor](https://cdn.codementor.io/badges/contact_me_github.svg)](https://www.codementor.io/rowland?utm_source=github&utm_medium=button&utm_term=rowland&utm_campaign=github)
 
+https://github.com/mentrie/london-weather/blob/master/Screen%20Shot%202017-03-17%20at%204.13.44%20AM.png
+
 # A weather report and recommendation application that helps London tourists to understand what to wear.
 
 ## Set-Up Guide
