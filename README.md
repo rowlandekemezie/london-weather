@@ -1,3 +1,5 @@
+[![Contact me on Codementor](https://cdn.codementor.io/badges/contact_me_github.svg)](https://www.codementor.io/rowland?utm_source=github&utm_medium=button&utm_term=rowland&utm_campaign=github)
+
 # A weather report and recommendation application that helps London tourists to understand what to wear.
 
 ## Set-Up Guide
